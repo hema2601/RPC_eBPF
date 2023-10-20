@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package intint;
+
+service IntegerTest{
+    rpc SendInt (MyInt) returns (MyInt) {}
+}
+
+message MyInt {
+    int64 my_int = 1;
+}
